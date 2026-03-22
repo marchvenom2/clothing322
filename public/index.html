@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>VelvetMuse Fashion | Trendy Women & Couple Clothing Store</title>
+  <meta name="description" content="Shop premium women's fashion and couple-friendly outfits at VelvetMuse Fashion. Trendy dresses, coordinated couple sets, everyday essentials with free shipping over $79."/>
+  <meta name="keywords" content="women fashion, couple fashion, trendy dresses, women clothing online, couple matching outfits, stylish women wear"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="VelvetMuse Fashion"/>
+  <link rel="canonical" href="https://www.velvetmuse.com/"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="VelvetMuse Fashion | Modern Women & Couple Clothing"/>
+  <meta property="og:description" content="Discover premium fashion for confident women and stylish couples."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.velvetmuse.com/"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200"/>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"VelvetMuse Fashion",
+    "url":"https://www.velvetmuse.com",
+    "description":"Premium women's and couple-friendly fashion store."
+  }
+  </script>
+  <style>
+    :root{--brand:#c2185b;--brand-hover:#a11348;--dark:#1a1a1a;--muted:#555;--light:#f9f9fc;--border:#e8e8ed;--max:1140px;--radius:12px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.7}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+    /* Top Bar */
+    .topbar{background:var(--dark);color:#fff;text-align:center;font-size:13px;padding:9px 0;letter-spacing:.4px}
+
+    /* Header */
+    header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .logo{font-size:26px;font-weight:800;color:var(--brand);letter-spacing:-0.5px}
+    .logo span{color:var(--dark)}
+    .nav-links a{margin-left:22px;font-weight:600;color:#333;transition:color .2s}
+    .nav-links a:hover{color:var(--brand)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:50px 0 40px}
+    .hero-text h1{font-size:42px;line-height:1.15;margin-bottom:14px}
+    .hero-text h1 span{color:var(--brand)}
+    .hero-text p{color:var(--muted);font-size:17px;margin-bottom:22px}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:14px 28px;border-radius:var(--radius);font-weight:700;transition:background .2s}
+    .btn:hover{background:var(--brand-hover)}
+    .btn-outline{background:transparent;border:2px solid var(--brand);color:var(--brand);margin-left:10px}
+    .btn-outline:hover{background:var(--brand);color:#fff}
+    .hero-img{width:100%;height:540px;object-fit:cover;border-radius:var(--radius);background:#eee}
+
+    /* Section */
+    .section{padding:45px 0}
+    .section-title{font-size:30px;margin-bottom:8px}
+    .section-sub{color:var(--muted);margin-bottom:22px;font-size:16px}
+
+    /* Grid */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+
+    /* Card */
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:box-shadow .25s}
+    .card:hover{box-shadow:0 6px 24px rgba(0,0,0,.08)}
+    .card img{width:100%;height:340px;object-fit:cover;background:#f0f0f0}
+    .card-body{padding:14px 16px}
+    .card-body h3{font-size:18px;margin-bottom:6px}
+    .card-body .price{color:var(--brand);font-weight:700;font-size:17px}
+    .card-body .old-price{color:#aaa;text-decoration:line-through;font-size:14px;margin-left:6px}
+    .badge{display:inline-block;background:#fce4ec;color:var(--brand);font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:6px}
+
+    /* Content Block */
+    .content-block{background:var(--light);border:1px solid var(--border);border-radius:var(--radius);padding:30px 34px}
+    .content-block p{margin-bottom:14px;font-size:16px;color:#333}
+    .content-block p:last-child{margin-bottom:0}
+
+    /* Couple Banner */
+    .couple-banner{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:40px 0}
+    .couple-banner img{width:100%;height:420px;object-fit:cover;border-radius:var(--radius)}
+    .couple-banner h2{font-size:30px;margin-bottom:10px}
+    .couple-banner p{color:var(--muted);margin-bottom:18px}
+
+    /* Testimonials */
+    .testimonial{background:var(--light);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center}
+    .testimonial p{font-style:italic;color:#444;margin-bottom:8px}
+    .testimonial strong{color:var(--brand)}
+
+    /* Footer */
+    footer{background:#1a1a1a;color:#ccc;margin-top:40px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px;padding:36px 0}
+    .footer-grid h4{color:#fff;margin-bottom:12px;font-size:16px}
+    .footer-grid a{display:block;color:#aaa;margin:6px 0;font-size:14px;transition:color .2s}
+    .footer-grid a:hover{color:var(--brand)}
+    .footer-bottom{border-top:1px solid #333;padding:14px 0;font-size:13px;color:#777;text-align:center}
+
+    /* Responsive */
+    @media(max-width:900px){
+      .hero,.couple-banner{grid-template-columns:1fr}
+      .hero-img,.couple-banner img{height:360px}
+      .hero-text h1{font-size:32px}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .footer-grid{grid-template-columns:1fr}
+      .nav-links a{margin-left:12px;font-size:14px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">🚚 Free Shipping on Orders Over $79 &nbsp;|&nbsp; ✨ New Couple Collection Just Dropped</div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <a class="logo" href="/"><span>Velvet</span>Muse</a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="couple-collection.html">Couples</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <div class="hero-text">
+        <h1>Elevate Your <span>Everyday Style</span> with Confidence</h1>
+        <p>Discover premium women's fashion and couple-friendly coordinated looks designed for comfort, elegance, and modern living.</p>
+        <a class="btn" href="shop.html">Shop Women</a>
+        <a class="btn btn-outline" href="couple-collection.html">Couple Looks</a>
+      </div>
+      <img class="hero-img" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop" alt="Attractive women walking in trendy modern fashion outfits" loading="eager"/>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container section">
+      <h2 class="section-title">Trending Now</h2>
+      <p class="section-sub">Hand-picked styles our customers are loving this season.</p>
+      <div class="grid-3">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?q=80&w=900&auto=format&fit=crop" alt="Elegant woman in casual summer dress" loading="lazy"/>
+          <div class="card-body">
+            <span class="badge">New Arrival</span>
+            <h3>Breezy Summer Dress</h3>
+            <p><span class="price">$54.00</span><span class="old-price">$72.00</span></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=900&auto=format&fit=crop" alt="Beautiful woman in premium fashion blazer outfit" loading="lazy"/>
+          <div class="card-body">
+            <span class="badge">Best Seller</span>
+            <h3>Soft Luxe Blazer</h3>
+            <p><span class="price">$78.00</span></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop" alt="Stylish woman wearing vibrant red fashion dress" loading="lazy"/>
+          <div class="card-body">
+            <span class="badge">Trending</span>
+            <h3>Vivid Red Mini</h3>
+            <p><span class="price">$62.00</span><span class="old-price">$85.00</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Couple Banner -->
+    <section class="container couple-banner">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1000&auto=format&fit=crop" alt="Stylish couple wearing matching coordinated fashion outfits" loading="lazy"/>
+      <div>
+        <h2>Couple Collection</h2>
+        <p>Matching doesn't mean identical. Discover subtle coordinated sets that let couples express their style together—elegant, effortless, and never forced.</p>
+        <a class="btn" href="couple-collection.html">Explore Couple Looks</a>
+      </div>
+    </section>
+
+    <!-- More Products -->
+    <section class="container section">
+      <h2 class="section-title">Everyday Essentials</h2>
+      <p class="section-sub">Versatile pieces that go from brunch to evening seamlessly.</p>
+      <div class="grid-3">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe?q=80&w=900&auto=format&fit=crop" alt="Women's beige trench coat fashion outfit" loading="lazy"/>
+          <div class="card-body"><h3>Classic Trench</h3><p><span class="price">$88.00</span></p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900&auto=format&fit=crop" alt="Attractive woman in elegant minimalist style" loading="lazy"/>
+          <div class="card-body"><h3>Minimalist Top</h3><p><span class="price">$38.00</span></p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=900&auto=format&fit=crop" alt="Women's trendy street fashion look" loading="lazy"/>
+          <div class="card-body"><h3>Street Chic Set</h3><p><span class="price">$67.00</span><span class="old-price">$90.00</span></p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 800+ Word Content Block -->
+    <section class="container section">
+      <h2 class="section-title">Welcome to VelvetMuse Fashion</h2>
+      <div class="content-block">
+        <p>Welcome to <strong>VelvetMuse Fashion</strong>, your premier destination for modern, trend-forward clothing designed for confident women and stylish couples who value quality, comfort, and self-expression. We believe that fashion is more than just clothing—it is a way to communicate who you are, how you feel, and the life you want to live. That is why we carefully curate every piece in our collection to ensure it combines contemporary design, premium fabrics, and versatile styling options that work for everyday life and special occasions alike.</p>
+
+        <p>At VelvetMuse, our women's collection is crafted to celebrate individuality. Whether you prefer effortless minimalism, bold statement looks, or classic wardrobe staples, you will find something that resonates with your personal aesthetic. Our lineup includes modern-cut dresses, tailored blazers, relaxed streetwear, elegant evening pieces, and soft knitwear designed for every season. Each garment is selected for its flattering silhouette, wearability across multiple settings, and enduring appeal. We believe great fashion should not require constant replacement—our pieces are designed to stay stylish season after season.</p>
+
+        <p>Our couple-friendly collection is one of the most loved categories on our site. Unlike traditional matching outfits that can feel forced or costume-like, our couple sets focus on subtle coordination. Think complementary color palettes, harmonized textures, and design details that visually connect two people without being identical. Whether you are heading to a weekend brunch, a photo shoot, or a vacation getaway, our couple looks help you and your partner express shared style with confidence and sophistication.</p>
+
+        <p>We understand that online shopping can sometimes feel uncertain, which is why we prioritize transparency at every step. Product descriptions include detailed fabric composition, sizing guides, and styling tips so you know exactly what to expect before checkout. Our high-resolution images are carefully photographed under natural-tone lighting to present accurate colors and textures. We never use heavily manipulated photos because we want every item you receive to match the quality and look you saw on screen.</p>
+
+        <p>VelvetMuse Fashion is built with your shopping experience in mind. Our website is optimized for fast loading, smooth navigation, and seamless checkout on both desktop and mobile devices. You can easily browse by category, filter by size and price, and save favorites for later. We use secure payment processing through trusted gateways to protect your personal and financial information during every transaction. Your data privacy matters to us, and we never sell or share customer information with unauthorized third parties.</p>
+
+        <p>We are proud to offer customer-first policies that are clear and fair. Our shipping policy provides transparent delivery estimates so you can plan around your order. Our return and refund policy gives you a 14-day window to return eligible items if they do not meet your expectations—because we want every purchase to feel like a great decision. If you ever need help, our customer support team is reachable through email and our contact form, typically responding within 24 hours during business days.</p>
+
+        <p>Fashion sustainability is also part of our brand ethos. We work with suppliers who prioritize responsible manufacturing processes, and we are continually evaluating ways to reduce waste in packaging and production. While we are still growing in this area, we are committed to making thoughtful choices that balance style, quality, and environmental responsibility. We believe the fashion industry can evolve without sacrificing beauty or accessibility, and we want to be part of that positive change.</p>
+
+        <p>Whether you are refreshing your wardrobe for a new season, searching for the perfect date-night outfit, or looking for a coordinated couple look that feels natural and elegant, VelvetMuse Fashion is here to make your shopping experience simple, inspiring, and trustworthy. We invite you to explore our latest collections, sign up for exclusive early access to new drops, and become part of a growing community of fashion-forward individuals who value quality, authenticity, and modern style. Thank you for choosing VelvetMuse—we are excited to be part of your fashion journey.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container section">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="grid-3">
+        <div class="testimonial">
+          <p>"The couple set was perfect for our anniversary photos. Subtle, elegant, and high quality."</p>
+          <strong>— Sarah & James</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Best online fashion store I've tried. The blazer fits like it was made for me."</p>
+          <strong>— Priya M.</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Fast shipping, beautiful packaging, and the dress looked exactly like the photo."</p>
+          <strong>— Emily R.</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>VelvetMuse Fashion</h4>
+        <p>Premium women's and couple fashion with transparent policies, secure checkout, and modern style you can trust.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">All Products</a>
+        <a href="couple-collection.html">Couple Collection</a>
+        <a href="shop.html">New Arrivals</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <a href="refund-and-returns.html">Refund & Returns</a>
+        <a href="shipping-policy.html">Shipping Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 VelvetMuse Fashion. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
